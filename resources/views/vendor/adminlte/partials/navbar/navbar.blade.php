@@ -1,5 +1,5 @@
 <nav class="main-header navbar
-    {{ config('adminlte.classes_topnav_nav', 'navbar-expand') }} 
+    {{ config('adminlte.classes_topnav_nav', 'navbar-expand') }}
     {{ config('adminlte.classes_topnav', 'navbar-white navbar-light') }}">
 
     {{-- Navbar left links --}}
@@ -36,7 +36,7 @@
     </ul>
 
     {{-- Left sidebar toggler link --}}
-    <ul class="navbar-nav ml-auto custom-click" onclick="custom_link()">
+    <ul class="navbar-nav ml-auto active_nav_toggle" id="custom-click" onclick="navMenuToggle()">
         @include('adminlte::partials.navbar.menu-item-left-sidebar-toggler')
     </ul>
 
