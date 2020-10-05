@@ -34,7 +34,7 @@
         @endif
 
         {{-- Content Wrapper --}}
-        <div class="content-wrapper {{ config('adminlte.classes_content_wrapper') ?? '' }} custom_content_wrapp" style="transition: margin-right.3s ease-in-out !important;margin-right: 250px;text-align: right">
+        <div class="content-wrapper {{ config('adminlte.classes_content_wrapper') ?? '' }} custom_content_wrapp extra_custom_content_wrap">
 
             {{-- Content Header --}}
             <div class="content-header">
@@ -68,6 +68,4 @@
 @section('adminlte_js')
     @stack('js')
     @yield('js')
-
-    <script src="/js/custom.js"></script>
 @stop
