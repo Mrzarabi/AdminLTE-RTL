@@ -1,4 +1,7 @@
-/* this code is use in view /partials/sidebar/menu-item-link.blade & /partials/menu-item-treeview-menu.blade */
+/* this styles is use in view
+/partials/sidebar/menu-item-link 
+/partials/menu-item-treeview-menu
+*/
 .custom_left {
   position: absolute;
   left: 1rem !important;
@@ -8,30 +11,58 @@
 .nav-sidebar .menu-open>.nav-link i.custom_left {
     transform: rotate(-90deg);
 }
+/* End */
 
-/* finish */
-
-@media(min-width:992px) {
-    .sidebar-mini.sidebar-collapse .content-wrapper, 
-    .sidebar-mini.sidebar-collapse .main-footer, 
-    .sidebar-mini.sidebar-collapse .main-header {
-        margin-right: 4.6rem !important;
-        margin-left: 0rem !important;
-    }
-}
-
-.custom-click {
+ /* This styles is use in /partials/navbar/navbar */
+.active_nav_toggle {
     margin-right: 250px;
 }
 
-.extra_custom_click {
-    margin-right: 4.6rem;
+ /* This styles is use in /partials/navbar/navbar */
+.remove_active_nav_toggle {
+    margin-left: 0px;
+}
+
+/* This styles is use in page.blade */
+.extra_custom_content_wrap {
+    transition: margin-right.3s ease-in-out !important;
+    margin-right: 250px;
+    text-align: right;
+}
+
+/* This styles is use in /partials/sidebar/left-sidebar */
+.extra_nav {
+    padding-right: 0px;
+}
+
+.extra_main_sidebar {
+    right:0;
+    direction:rtl;
+    text-align:right;
+}
+/* End */
+
+/* This styles is in
+/partials/navbar/menu-item-logout-link 
+/partials/navber/menu-item-search-form
+ */
+.extra_direction {
+    direction: rtl;
 }
 
 @media (min-width: 768px) {
     body:not(.sidebar-mini-md) .content-wrapper,
     body:not(.sidebar-mini-md) .main-footer,
     body:not(.sidebar-mini-md) .main-header {
+        margin-left: 0rem !important;
+    }
+}
+
+@media(min-width:992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper,
+    .sidebar-mini.sidebar-collapse .main-footer,
+    .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem !important;
         margin-left: 0rem !important;
     }
 }
